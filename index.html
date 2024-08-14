@@ -8,6 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!--Font awsome -->
+    <script src="https://kit.fontawesome.com/5595d210ce.js" crossorigin="anonymous"></script>
+
     <!-- tailwind custom color-->
     <script>
         tailwind.config = {
@@ -35,9 +38,226 @@
      </style>
 </head>
 <body class="font-manrope">
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="container mx-auto">
+      <div class="hero ">
+        <div class="hero-content flex-col lg:flex-row">
+
+          <div>
+            <h1 class="text-7xl font-extrabold">It's good<br>tea time at the <br>Tea House</h1>
+            <p class="py-6">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+              quasi. In deleniti eaque aut repudiandae et a id nisi.
+            </p>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
+          <div>
+            <img
+            src="images/banner.png"
+            class="max-w-sm" />
+            <!-- Ratings Badge-->
+            <div class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60">
+              <i class="fa-solid fa-star text-3xl text-amber-400"></i>
+              <div>
+                <h3 class="text-3xl">5.00</h3>
+                <p>Trust pilot ratings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </header>
+    <main class="'container mx-auto">
+      <!-- feature section-->
+       <section class="text-center my-24">
+        <h2 class="text-5xl font-extrabold mb-5">Our Featured Products</h2>
+        <p class="lg:max-w-3xl mb-10 mx-auto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus autem natus, rem velit provident corrupti, debitis enim sunt quaerat id quasi earum quod quos accusamus alias quas modi. Ad, delectus.</p>
+        <!-- featured tea card container-->
+         <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <!-- first card-->
+          <div class="card  p-8 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl">
+            <figure>
+              <img
+                src="images/tea-1.png"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Milk Tea</h2>
+              <p>Creamer could be replaced with fresh milk</p>
+
+            </div>
+          </div>
+
+          <!-- second card-->
+          <div class="card  p-8 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl">
+            <figure>
+              <img
+                src="images/tea-2.png"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Milk Tea</h2>
+              <p>Creamer could be replaced with fresh milk</p>
+
+            </div>
+          </div>
+
+          <!-- third card-->
+          <div class="card p-8 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl">
+            <figure>
+              <img
+                src="images/tea-3.png"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Milk Tea</h2>
+              <p>Creamer could be replaced with fresh milk</p>
+
+            </div>
+          </div>
+          
+          <!-- fourth card-->
+          <div class="card p-8 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl">
+            <figure>
+              <img
+                src="images/tea-4.png"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Milk Tea</h2>
+              <p>Creamer could be replaced with fresh milk</p>
+
+            </div>
+          </div>
+         </div>
+       </section>
+
+       <!-- great tea fresh tea section-->
+        <section class="my-24 flex gap-12 flex-col lg:flex-row">
+          <div  class="grid gap-8 grid-cols-1 md:grid-cols-2 flex-1">
+            <div class="rounded-xl h-36 bg-gradient-to-r from-red-100 to-amber-100"></div>
+            <div class="row-span-2 bg-[#E6A6231A] rounded-lg px-8 py-12 flex justify-center items-center"><img src="images/fresh-1.png" alt=""></div>
+            
+            <div class="row-span-2 bg-[#5776391A] rounded-lg px-8 py-12 flex justify-center items-center"><img src="images/fresh-2.png" alt=""></div>
+          <div class="rounded-xl h-36 bg-gradient-to-r from-grey-100 to-white-100"></div>
+          </div>
+          <div class="space-y-5 flex-1" >
+            <h3 class="text-5xl font-extrabold">Great Tea, Freshly
+              <br>Presented
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, consectetur incidunt vitae aspernatur optio sunt nam laborum dolores saepe sit accusamus harum fugit in expedita maiores assumenda architecto ut! Fuga?</p>
+            <h4 class="text-xl font-extrabold mt-8">Unique Taste</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente quam iure rerum minus numquam repellat illo, itaque sit adipisci dolorum ducimus aliquam asperiores deserunt unde porro laboriosam corporis esse sed.
+            </p>
+            <h4 class="text-xl font-extrabold">Premium Quality</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente quam iure rerum minus numquam repellat illo, itaque sit adipisci dolorum ducimus aliquam asperiores deserunt unde porro laboriosam corporis esse sed.
+            </p>
+
+          </div>
+        </section>
+
+        <!-- super client section-->
+         <section class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-amber-500 to-orange-700 px-16 py-24">
+          <div class="flex pr-28 items-center">
+            <div class="space-y-5 ">
+              <h2 class="text-5xl font-extrabold text-white">
+                Meet our super<br> Clients
+              </h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus assumenda, provident ipsa quae neque pariatur eligendi eius voluptas quos tempora quam veritatis enim magnam iusto tenetur eveniet error. Cupiditate, pariatur?</p>
+              <button class="btn btn-primary">Show All</button>
+            </div>
+
+          </div>
+          <!-- Review container-->
+           <div class="relative">
+          <!-- next review -->
+          <div class="relative z-10 mb-16 opacity-40 p-10 rounded-lg bg-white">
+            <img class="absolute -top-5 -left-10 border-4 border-white rounded-full" src="images/client.png" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut animi quibusdam non quos, quas labore aspernatur beatae sit laudantium aperiam error veniam exercitationem veritatis repellendus nesciunt expedita eligendi neque odio.
+
+            </p>
+            <h4 class="font-bold mt-5">Ilham Yuda</h4>
+            <p class="font-medium">Bussinessman</p>
+            <div class="flex justify-end">
+              <img src="images/circles.png" alt="">
+            </div>
+
+          </div>
+
+          <!-- current review -->
+          <div class="absolute z-20 top-40 right-40 lg:w-[430px] p-10 rounded-lg bg-white">
+            <img class="absolute -top-5 -left-10 border-4 border-white rounded-full" src="images/client.png" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut animi quibusdam non quos, quas labore aspernatur beatae sit laudantium aperiam error veniam exercitationem veritatis repellendus nesciunt expedita eligendi neque odio.
+
+            </p>
+            <h4 class="font-bold mt-5">Ilham Yuda</h4>
+            <p class="font-medium">Bussinessman</p>
+            <div class="flex justify-end">
+              <img src="images/circles.png" alt="">
+            </div>
+
+          </div>
+          <!-- previous review -->
+          <div class="relative z-10 opacity-40 p-10 rounded-lg bg-white">
+            <img class="absolute -top-5 -left-10 border-4 border-white rounded-full" src="images/client.png" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut animi quibusdam non quos, quas labore aspernatur beatae sit laudantium aperiam error veniam exercitationem veritatis repellendus nesciunt expedita eligendi neque odio.
+
+            </p>
+            <h4 class="font-bold mt-5">Ilham Yuda</h4>
+            <p class="font-medium">Bussinessman</p>
+            <div class="flex justify-end">
+              <img src="images/circles.png" alt="">
+            </div>
+
+          </div>
+
+           </div>
+
+         </section>
+    </main>
+    <footer class="bg-base-200 text-base-content p-10" >
+      <div class="footer ">
+        <nav>
+          <h6 class="footer-title">Services</h6>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Company</h6>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Legal</h6>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+        <form>
+          <h6 class="footer-title">Newsletter</h6>
+          <fieldset class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="join">
+              <input
+                type="text"
+                placeholder="username@site.com"
+                class="input input-bordered join-item" />
+              <button class="btn btn-primary join-item">Subscribe</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+
+      <aside class="mt-4 text-center">
+        <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+      </aside>
+    </footer>
     
 </body>
 </html>
